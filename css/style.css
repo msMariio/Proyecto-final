@@ -1,0 +1,319 @@
+/* Fonts */
+@font-face {
+  font-family: 'Calisto-MT';
+  src: url(../fonts/Calisto-MT.ttf); }
+
+@font-face {
+  font-family: 'Calisto-MT-Italic';
+  src: url(../fonts/Calisto-MT-Italic.ttf); }
+
+@font-face {
+  font-family: 'Calisto-MT-Bold';
+  src: url(../fonts/Calisto-MT-Bold.ttf); }
+
+  * {
+
+    font-family: "Calisto-MT"; }
+
+.banner{
+    background-image:   linear-gradient(
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.9)
+    ), url("../images/top-banner-bckg.jpg");
+  
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Burger*/
+  
+  .bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 3px;
+    background-color: #c18f59;
+    margin: 6px 0;
+    transition: 0.4s; }
+  
+  .change .bar1 {
+    transform: rotate(-45deg) translate(-6px, 6px);
+    background-color: #c18f59; }
+  
+  .change .bar2 {
+    opacity: 0;
+    background-color: #c18f59; }
+  
+  .change .bar3 {
+    transform: rotate(45deg) translate(-6px, -7px);
+    background-color: #c18f59; }
+  
+  .stop-scroll {
+    overflow: hidden; }
+  
+  /* Fin Burger*/
+
+  .texto {
+    font-size: 14px;
+    color: #c18f59;
+  }
+
+  .jhone{
+    color: #fff;
+    font-family: "Calisto-MT-Bold";
+  }
+
+  .text-down{
+    text-align:center;
+  }
+
+  .boton {
+    width: 120px;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #c18f59;
+    border: 1px solid #fff;
+    transition: 0.3s ease; }
+  .boton:hover, .boton:focus {
+    color: #777;
+    text-decoration: none; 
+  }
+
+  .parrafo{
+    color: #777;
+  }
+
+  .about-me{
+    background-image: url("../images/about-me-bckg.jpg");
+    
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .titulo {
+    font-family: 'Calisto-MT-Bold';
+    background-image: url("../images/double-line.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+
+  .imagen {
+    position: relative;
+    display: block;
+    font-size: 0;
+  }
+
+  .descarga {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease;
+  }
+
+  .descarga img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  .imagen:hover .descarga {
+    visibility: visible;
+    opacity: 0.7;
+  }
+
+  .titulo-libro {
+    font-family: 'Calisto-MT-Bold';
+  }
+
+  .precio-libro {
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    color: #c18f59;
+  }
+
+  .rating {
+    margin-top: 8px;
+    unicode-bidi: bidi-override;
+    direction: rtl; }
+    .rating span {
+      font-size: 23px;
+      color: #ffd200;
+      cursor: pointer; }
+    .rating > span:hover:before, .rating > span:hover ~ span:before {
+      content: "\2605";
+      position: absolute; }
+
+.boton-libros .boton {
+  font-size: 16px;
+  text-transform: none;
+  border-color: #c18f59;
+}
+
+.boton-libros .boton:hover {
+  border-color: #777;
+}
+
+.contador {
+  background-image:   linear-gradient(
+    rgba(216, 172, 114, 0.8),
+    rgba(216, 172, 114, 0.8)
+  ), url("../images/book-bckg.jpg");
+ 
+  background-size: cover;
+  background-position: center;
+}
+
+.texto-contador {
+  color: #fff;
+}
+
+.texto-contador p {
+  font-size: 20px;
+}
+
+.social {
+  background-image:   linear-gradient(
+    rgba(216, 172, 114, 0.8),
+    rgba(216, 172, 114, 0.8)
+  ), url("../images/social-bckg.jpg");
+ 
+  background-size: cover;
+  background-position: center;
+}
+
+.social-icons a {
+  position: relative;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 13px 23px;
+  margin-right: 10px;
+  transition: 0.3s ease; }
+  .social-icons a:hover {
+    background-color: #777;
+    border-color: transparent; }
+
+.social-icons img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+.pie-pagina {
+  background-color: #3a3a3a;
+}
+
+.pie-pagina-abajo {
+  background-color: #2d2d2d;
+}
+.pie-pagina-abajo p {
+  color: #777; }
+.pie-pagina-abajo a {
+  color: #c18f59;
+  text-decoration: none;
+  transition: 0.3s ease; }
+  .pie-pagina-abajo a:hover {
+    color: #777; }
+
+    .formulario textarea {
+      box-sizing: border-box;
+      height: 90px;
+      width: 100%;
+      
+      
+      border: 1px solid #404040;
+      background-color: #282828;
+      resize: none;
+      color: #c18f59; }
+    .formulario .formulario-boton {
+     
+      text-transform: uppercase;
+      font-size: 12px;
+      color: #fff;
+      background-color: #c18f59;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: 0.3s ease; }
+      .formulario .formulario-boton:hover {
+        background-color: #777; }
+
+        .formulario-input input {
+          width: 49%;
+          border: 1px solid #404040;
+          background-color: #282828;
+          color: #c18f59;
+        }
+
+.texto-footer {
+  color: #aaa;
+}
+
+.quotes {
+  background-image:   linear-gradient(
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9)
+  ), url("../images/quotes-bckg.jpg");
+ 
+  background-size: cover;
+  background-position: center;
+}
+.quotes .titulo {
+  height: 10px;
+}
+
+.quotes h4 {
+  color: #c18f59;
+}
+
+.blog h4 {
+  font-family: 'Calisto-MT-Bold';
+}
+
+.blog h1 {
+  font-family: 'Calisto-MT-Bold';
+}
+  .blog span {
+    color: #c18f59;
+  }
+
+  .blog .titulo {
+    height: 10px;
+  }
+
+.foto-hombre {
+  background-color: rgb(255, 255, 255);
+  width: fit-content;
+}
+.foto-hombre span {
+  color: #c18f59;
+}
+.foto-hombre h1 {
+  font-family: 'Calisto-MT-Bold';
+}
+
+.foto-hombre p {
+  font-family: 'Calisto-MT-Italic';
+}
+  .about-me .titulo{
+    height: 10px;
+  }
+
+  .h{
+    color: rgb(255, 255, 255);
+  }
+
+  .texto-about{
+    color: #c18f59;
+  }
+
+  .titulo-about{
+    font-family: 'Calisto-MT-Bold';
+    color: rgb(255, 255, 255);
+  }
